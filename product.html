@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <!--render all element normally-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--INITIALIZE AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate css-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--library hover-->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!--main template css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!--Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+          <!-- Start Navbar --> 
+    <section class="header-navbar container-fluid w-100 p-0">
+      <nav>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                    <a href="#">
+                        <img src="img1/logo.png" class="w-50">
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                      <ul class="navbar-nav main-nav__list">
+                        <li class="nav-item">
+                          <a class="nav-link home active m-0" aria-current="page" href="index.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  m-0" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  m-0" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  m-0" href="favorite.html">Fav Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link m-0">User</a>
+                          <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                            <li class="dropdown_item-1"><a class="dropdown-item" href="login.html">Log In</a></li>
+                            <li class="dropdown_item-2"><a class="dropdown-item" href="login.html">Sign Out</a></li>
+                        </ul>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+          </div>
+        </div>
+      </nav>
+  </section>
+<!-- End Navbar -->
+    </header>
+
+    <section class="products-details">
+      <div class="products-container">
+        <div class="product row position-relative">
+            
+        </div>
+      </div>
+    </section>
+
+  <article class="product-description">
+      <div class="products-container">
+        <p class="m-0">
+          <a data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample" class="me-2 text-white text-decoration-none">
+            Description
+          </a>
+          <a data-bs-toggle="collapse" href="#review" role="button" aria-expanded="false" aria-controls="collapseExample"  class="ms-2 text-white text-decoration-none">
+            Reviews (0)
+          </a>
+        </p>
+        <div class="collapse" id="description">
+          <div class="card card-body m-0 my-3">
+            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.
+          </div>
+        </div>
+        <div class="collapse" id="review">
+          <div class="card card-body m-0 my-3">
+              <div class="product-review row">
+                <div class="col-4">
+                    <p class="mb-3">Your Name </p>
+                    <p>Your Review </p>
+                </div>
+                <div class="col-8">
+                  <input type="text" name="name" value="" id="input-name" class="form-control mb-3">
+                  <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                </div>
+                <div class="col-3 mt-5">
+                  <p>Rating</p>
+                </div>
+                <div class="col-8 mt-5">
+                  <label>Bad</label>
+                  <input type="radio" name="review">
+                  <input type="radio" name="review">
+                  <input type="radio" name="review">
+                  <input type="radio" name="review">
+                  <input type="radio" name="review">
+                  <label>Good</label>
+                </div>
+                <div class="col-12 text-end">
+                  <button class="btn-continue hvr-pulse-grow">continue</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </article>
+
+
+  <!-- Start RELATED PRODUCTS -->
+  <section class="related-products">
+    <div class="products-container">
+      <h2 class="text-center my-4">RELATED PRODUCTS</h2>
+      <!-- Carousel -->
+      <div class="owl-carousel">
+        <div> 
+          <img src="img1/product-12-270x330.png" class="w-100">
+        </div>
+        <div> 
+          <img src="img1/product-16-270x330.png" class="w-100">
+        </div>
+        <div> 
+          <img src="img1/product-3-270x330.png" class="w-100">
+        </div>
+        <div> 
+          <img src="img1/product-1-270x330.png" class="w-100">
+        </div>
+        <div> 
+          <img src="img1/product-7-270x330.png" class="w-100">
+        </div>
+        <div> 
+          <img src="img1/product-6-270x330.png" class="w-100">
+        </div>
+        <div> 
+          <img src="img1/product-5-270x330.png" class="w-100">
+        </div>
+      </div>
+      <!-- End Carousel -->
+    </div>
+  </section>
+  <!-- End RELATED PRODUCTS -->
+    
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content py-3" id="Contact">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="content-details d-flex justify-content-between flex-column">
+                    <p class="position-relative">COMPANY</p>
+                    <a href="#" class="hvr-forward">Shipping & Returns</a>
+                    <a href="#" class="hvr-forward">Store Policy</a>
+                    <a href="#" class="hvr-forward">Payment Methods</a>
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="content-details d-flex justify-content-between flex-column">
+                  <p class="position-relative">QUESTIONS?</p>
+                  <a href="#" class="hvr-forward">Contact</a>
+                  <p class="mb-2 hvr-forward"> <span class="me-1"><i class="fa-solid fa-phone"></i></span> Tel: 123-456-7890</p>
+                  <a href="#" class="hvr-forward text-decoration-underline"><span class="me-1"><i class="fa-solid fa-circle-info"></i></span> info@mysite.com</a>
+              </div>
+              </div>
+              <div class="col-md-4">
+                <div class="content-details d-flex justify-content-between flex-column">
+                  <p class="position-relative">CONNECT WITH US</p>
+                  <a href="#" class="facebook hvr-forward"><span class="me-1"><i class="fa-brands fa-facebook"></i></span> Facebook</a>
+                  <a href="#" class="insta hvr-forward"><span class="me-1"><i class="fa-brands fa-instagram"></i></span> Instagram</a>
+                  <a href="#" class="pinterest hvr-forward"><span class="me-1"><i class="fa-brands fa-pinterest"></i></span> Pinterest</a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom text-center py-3">
+              <p class="mb-0">	Claui Store &copy; 2023. Made with <i class="fa-solid fa-heart"></i> by Multipurposethemes.</p>
+          </div>
+        </div>
+    </footer>
+
+    <a href="#" class="top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+
+    <!--Icons-->
+    <script src="js/all.min.js"></script>
+     <!--bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <!--INITIALIZE AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <!--jquery-->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!--carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--main js file-->
+    <script src="js/product.js"></script>
+  </body>
+  </html>

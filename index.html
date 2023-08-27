@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <!--render all element normally-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="css/all.min.css">
+      <!--INITIALIZE AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Animate Css-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Swiper-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet" />
+    <!--library hover-->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--sweetalert-->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+      <!--main template css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+
+  <!-- Start Header -->
+<header>
+  <!-- Start Navbar --> 
+    <section class="header-navbar container-fluid w-100 p-0">
+        <nav>
+          <div class="navbar navbar-expand-lg">
+              <div class="container">
+                      <a href="#">
+                          <img src="img1/logo.png" class="w-50">
+                      </a>
+
+                      <div class="cart">
+                        <a href="#" class="ms-3 cart position-relative text-decoration-none">
+                          <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span> <span class="increase">0</span>
+                        </a>
+                      <!--Start cart Details-->
+                        <div class="show-cart-products">
+                          <ul class="add-cart-products"></ul>
+                          <button class="view-products my-2 hvr-box-shadow-outset">View All Products in carts</button>
+                        </div>
+                      </div>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav main-nav__list">
+                          <li class="nav-item">
+                            <a class="nav-link home active m-0" aria-current="page" href="../index.html">Shop</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link  m-0" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link  m-0" href="contact.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link  m-0" href="favorite.html">Fav Product</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link m-0">User</a>
+                            <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                              <li class="dropdown_item-1"><a class="dropdown-item" href="login.html">Log In</a></li>
+                              <li class="dropdown_item-2"><a class="dropdown-item" href="login.html">Sign Out</a></li>
+                          </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+            </div>
+          </div>
+        </nav>
+    </section>
+  <!-- End Navbar -->
+      <!--Start Slider-->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1/slide-1-1920x600.jpg" alt="Los Angeles" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img1/slide-2-1920x600.jpg" alt="Chicago" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+      <!--End Slider-->
+      <!-- Start Header Content -->
+    <section class="header-content my-2" id="Shop">
+      <div class="header-content__container">
+        <div class="header-content">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="img-content overflow-hidden position-relative">
+                  <img src="img1/570x630.jpg" class="w-100">
+                  <span class="img-content__color"></span>
+                  <button class="header-content__btn1 hvr-rectangle-out">KING'S SOFA</button>
+                </div>  
+              </div>
+              <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="img-content overflow-hidden position-relative">
+                        <img src="img1/270x300-1.jpg" class="w-100">
+                        <span class="img-content__color"></span>
+                        <button class="header-content__btn2 hvr-rectangle-out">ROUND SOFA</button>
+                      </div>  
+                    </div>
+                    <div class="col-md-6">
+                      <div class="img-content overflow-hidden position-relative">
+                        <img src="img1/270x300-2.jpg" class="w-100">
+                        <span class="img-content__color"></span>
+                        <button class="header-content__btn2 hvr-rectangle-out">LAMPS</button>
+                      </div> 
+                    </div>
+                    <div class="col-12 my-1">
+                      <div class="img-content overflow-hidden position-relative">
+                        <img src="img1/570x300-1.jpg" class="w-100">
+                        <span class="img-content__color"></span>
+                        <button class="header-content__btn2 hvr-rectangle-out">CURVED SOFA</button>
+                      </div> 
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="header-content__shopping justify-content-center row text-center" data-aos="zoom-in" data-aos-duration="3000">
+        </div>
+        <div class="shippingIndex"data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="shippingIndex-content">
+                        <span><i class="fa-solid fa-truck"></i></span>
+                        <h5>FREE SHIPPING</h5>
+                        <p>Free shipping on all US order or order above $200</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="shippingIndex-content">
+                    <span><i class="fa-solid fa-headphones"></i></span>
+                    <h5>SUPPORT 24/7</h5>
+                    <p>Contact us 24 hours a day, 7 days a week</p>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="shippingIndex-content">
+                    <span><i class="fa-solid fa-arrows-rotate"></i></span>
+                    <h5>30 DAYS RETURN</h5>
+                    <p>Simply return it within 30 days for an exchange.</p>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="shippingIndex-content">
+                    <span><i class="fa-solid fa-credit-card"></i></span>
+                    <h5>100% PAYMENT SECURE</h5>
+                    <p>We ensure secure payment with PEV</p>
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>      
+    </section>
+      <!-- End Header Content -->
+</header>
+  <!-- End Header -->
+
+
+  <section class="subscribe">
+      <div class="about-container">
+          <div class="subscribe-content">
+              <div class="row align-items-center">
+                  <div class="col-sm-6 overflow-hidden">
+                    <div class="subscribe-content__text" data-aos="fade-right" data-aos-duration="3000">
+                        <h3>NEWSLETTER</h3>
+                        <p>SIGN UP TO OUR NEWSLETTER AND SAVE 20% OFF FOR YOUR NEXT PURCHASE</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 overflow-hidden">
+                    <div class="subscribe-content__form" data-aos="fade-left" data-aos-duration="3000">
+                        <input type="text" placeholder="Enter Your Email" class="subscribe-input">
+                        <button class="submit hvr-pulse-shrink">Subscribe</button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer-content py-3" id="Contact">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-details d-flex justify-content-between flex-column">
+              <p class="position-relative">COMPANY</p>
+              <a href="#" class="hvr-forward">Shipping & Returns</a>
+              <a href="#" class="hvr-forward">Store Policy</a>
+              <a href="#" class="hvr-forward">Payment Methods</a>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="content-details d-flex justify-content-between flex-column">
+            <p class="position-relative">QUESTIONS?</p>
+            <a href="#" class="hvr-forward">Contact</a>
+            <p class="mb-2 hvr-forward"> <span class="me-1"><i class="fa-solid fa-phone"></i></span> Tel: 123-456-7890</p>
+            <a href="#" class="hvr-forward text-decoration-underline"><span class="me-1"><i class="fa-solid fa-circle-info"></i></span> info@mysite.com</a>
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content-details d-flex justify-content-between flex-column">
+            <p class="position-relative">CONNECT WITH US</p>
+            <a href="#" class="facebook hvr-forward"><span class="me-1"><i class="fa-brands fa-facebook"></i></span> Facebook</a>
+            <a href="#" class="insta hvr-forward"><span class="me-1"><i class="fa-brands fa-instagram"></i></span> Instagram</a>
+            <a href="#" class="pinterest hvr-forward"><span class="me-1"><i class="fa-brands fa-pinterest"></i></span> Pinterest</a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center py-3">
+        <p class="mb-0">	Claui Store &copy; 2023. Made with <i class="fa-solid fa-heart"></i> by Multipurposethemes.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<a href="#" class="top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+
+
+
+
+
+
+ <!--Icons-->
+  <script src="js/all.min.js"></script>
+   <!--bootstrap-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+   <!--INITIALIZE AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--Swiper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+  <!--jquery-->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <!--sweetalert-->
+  <script src="js/sweetalert2.all.min.js"></script>
+  <!--main js file-->
+  <script src="js/index.js"></script>
+</body>
+</html>

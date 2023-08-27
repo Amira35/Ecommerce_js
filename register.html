@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--page title-->
+     <title>Rigster</title>
+     <!--render all element normally-->
+     <link rel="stylesheet" href="css/normalize.css">
+     <!--Icons-->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!--INITIALIZE AOS-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--library hover-->
+     <link rel="stylesheet" href="css/hover-min.css">
+     <!--bootstrap-->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!--alert-->
+     <link rel="stylesheet" href="css/sweetalert2.min.css">
+     <!--main template css file-->
+     <link rel="stylesheet" href="css/register.css">
+     <link rel="stylesheet" href="css/style.css">
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+    <section class="register w-100">
+        <div class="register__content text-center">
+            <div class="text-center text-dark my-3 register__content-text">
+                Rigster
+            </div>
+            <form class="m-0" novalidate>
+                <div class="register__form">
+                    <div class="row">
+                        <div class="col-12 position-relative mb-3">
+                            <label for="#">UserName</label>
+                            <input type="text" id="userName">
+                        </div>
+                        <div class="col-12 position-relative mb-3">
+                            <label for="#">Email Address</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="col-12 position-relative mb-3">
+                            <label for="#">Password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="col-12" id="sendData">
+                            <button type="submit" class="hvr-pop register-btn ">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-white text-black p-0">
+        <p class="text-center my-3">Already Registred ? <a href="#" class="aready-register text-decoration-none">Log in</a> </p>
+    </footer>
+
+   <!--Icons-->
+   <script src="js/all.min.js"></script>
+   <!--bootstrap-->
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <!--jquery-->
+   <script src="js/jquery-3.6.3.min.js"></script>
+   <!--alert-->
+   <script src="js/sweetalert2.all.min.js"></script>
+   <!--main js file-->
+   <script src="js/register.js"></script>
+</body>
+</html>

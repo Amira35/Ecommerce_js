@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!--render all element normally-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="css/all.min.css">
+     <!--INITIALIZE AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate css-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!--library hover-->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!--main template css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carts.css">
+     <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+
+  <!-- Start Header -->
+<header>
+  <!-- Start Navbar --> 
+  <section class="header-navbar container-fluid w-100 p-0">
+    <nav>
+      <div class="navbar navbar-expand-lg">
+          <div class="container">
+                  <a href="#">
+                      <img src="img1/logo.png" class="w-50">
+                  </a>
+
+                  <div class="cart">
+                    <a href="#" class="ms-3 cart position-relative text-decoration-none">
+                      <span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span> <span class="increase">0</span>
+                    </a>
+                  <!--Start cart Details-->
+                    <div class="show-cart-products">
+                      <ul class="add-cart-products"></ul>
+                      <button class="view-products my-2 hvr-box-shadow-outset">View All Products in carts</button>
+                    </div>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-nav__list">
+                      <li class="nav-item">
+                        <a class="nav-link home active m-0" aria-current="page" href="index.html">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  m-0" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  m-0" href="contact.html">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  m-0" href="favorite.html">Fav Product</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link m-0">User</a>
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                          <li class="dropdown_item-1"><a class="dropdown-item" href="login.html">Log In</a></li>
+                          <li class="dropdown_item-2"><a class="dropdown-item" href="login.html">Sign Out</a></li>
+                      </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+        </div>
+      </div>
+    </nav>
+</section>
+<!-- End Navbar -->
+</header>
+<!-- End Header -->
+
+  <!-- Start View Product added to the Cart -->
+      <div class="products-cart">
+        <div class="cart-container">
+          <div class="carts">
+            <table class="w-100">
+              <thead>
+                <th>Image</th>
+                <th>Product Name</th> 
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  <!-- End View Product added to the Cart -->
+
+
+  <!-- Start FAQ -->
+  <section class="faq">
+    <div class="cart-container">
+      <h4>
+        <a class="faq-info d-block text-decoration-none" data-bs-toggle="collapse" href="#infoShipping" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Estimate Shipping &amp; Taxes 
+        </a>
+      </h4>
+      <div class="collapse" id="infoShipping">
+        <div class="card card-body">
+            <div class="row">
+                  <div class="col-12">
+                    <h6 class="my-4">Enter your destination to get a shipping estimate.</h6>
+                  </div>
+                  <div class="col-md-4 mt-sm-2">
+                      <p class="m-0">Country</p>
+                  </div>
+                  <div class="col-md-8 mb-sm-1">
+                    <select class="form-select custom-select" aria-label="Default select example">
+                      <option value="0">Arab Republic of Egypt</option>
+                      <option value="1">الإسكندرية</option>
+                      <option value="2">الإسماعيلية	</option>
+                      <option value="3">أسوان</option>
+                      <option value="4">أسيوط</option>
+                      <option value="5">الأقصر</option>
+                      <option value="6">الدقهلية</option>
+                      <option value="7">جنوب سيناء</option>
+                      <option value="8">الشرقية</option>
+                      <option value="9">القاهرة	</option>
+                      <option value="10">مطروح</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mt-sm-2">
+                    <p class="m-0">Post Code</p>
+                  </div>
+                  <div class="col-md-8 mb-sm-1">
+                    <input type="text" placeholder="Post Code" class="m-0 email">
+                  </div>
+                  <div class="col-12">
+                      <button class="submit p-sm-2 my-2 hvr-shrink">Get Quotes</button>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End FAQ -->
+
+
+  <!-- Start Culculate Total Price -->
+  <div class="product-price">
+    <div class="cart-container">
+      <div class="row justify-content-end">
+        <div class="col-4">
+          <table class="w-100">
+            <tbody class="product-total"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Culculate Total Price -->
+
+
+  <!-- Start Back to home -->
+    <section class="back-home">
+        <div class="cart-container">
+            <a href="index.html" class="hvr-icon-back text-decoration-none">
+              <i class="fa fa-chevron-circle-left hvr-icon"></i> Continue Shopping
+            </a>
+          </div>
+    </section>
+  <!-- End Back to home -->
+
+
+
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content py-3" id="Contact">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="content-details d-flex justify-content-between flex-column">
+                <p class="position-relative">COMPANY</p>
+                <a href="#" class="hvr-forward">Shipping & Returns</a>
+                <a href="#" class="hvr-forward">Store Policy</a>
+                <a href="#" class="hvr-forward">Payment Methods</a>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="content-details d-flex justify-content-between flex-column">
+              <p class="position-relative">QUESTIONS?</p>
+              <a href="#" class="hvr-forward">Contact</a>
+              <p class="mb-2 hvr-forward"> <span class="me-1"><i class="fa-solid fa-phone"></i></span> Tel: 123-456-7890</p>
+              <a href="#" class="hvr-forward text-decoration-underline"><span class="me-1"><i class="fa-solid fa-circle-info"></i></span> info@mysite.com</a>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="content-details d-flex justify-content-between flex-column">
+              <p class="position-relative">CONNECT WITH US</p>
+              <a href="#" class="facebook hvr-forward"><span class="me-1"><i class="fa-brands fa-facebook"></i></span> Facebook</a>
+              <a href="#" class="insta hvr-forward"><span class="me-1"><i class="fa-brands fa-instagram"></i></span> Instagram</a>
+              <a href="#" class="pinterest hvr-forward"><span class="me-1"><i class="fa-brands fa-pinterest"></i></span> Pinterest</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center py-3">
+          <p class="mb-0">	Claui Store &copy; 2023. Made with <i class="fa-solid fa-heart"></i> by Multipurposethemes.</p>
+      </div>
+    </div>
+</footer>
+
+
+<a href="#" class="top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+
+
+
+
+
+
+
+
+  <!--Icons-->
+  <script src="js/all.min.js"></script>
+  <!--bootstrap-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--INITIALIZE AOS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--jquery-->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <!--main js file-->
+  <script src="js/carts.js"></script>
+</body>
+</html>

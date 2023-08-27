@@ -1,0 +1,109 @@
+.cart-container{
+    padding: 50px 0;
+    max-width: 1140px;
+    margin: auto;
+}
+.carts{
+    padding: 50px 0;
+}
+.nav-active{
+    background-color: rgb(30, 32, 33);
+    box-shadow: rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 32px 16px;
+}
+table, th, td {
+    border: 1px solid ;
+    border-color: rgb(58, 62, 65);
+    border-collapse: collapse;
+    text-align: center;
+}
+td img{
+    padding: 5px;
+    border: 2px solid;
+    border-color: rgb(58, 62, 65);
+    cursor: pointer;
+}
+.delete-icon{
+    cursor: pointer;
+}
+
+.faq a{
+    color: rgb(200, 195, 188);
+    background-color: rgb(30, 32, 33);
+    border-color: rgb(58, 62, 65);
+    padding: 15px;
+    font-weight: 400;
+}
+
+.faq input{
+    width: 100%;
+    margin-top: 10px;
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+    border: rgb(62, 68, 70) 1px solid;
+    padding: 10px;
+}
+.faq .custom-select{
+    position: relative;
+    color: #000;
+    background-color: rgb(24, 26, 27);
+    background-image: none;
+    border: rgb(62, 68, 70) 1px solid;
+}
+.faq input:focus{
+    background-color: initial;
+    box-shadow: none;
+    outline: none;
+}
+.faq select:focus{
+    background-color: initial;
+    box-shadow: none;
+}
+.faq p::after{
+    content: "* ";
+    font-weight: bold;
+    color: red;
+}
+.faq .submit{
+    border: none;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+.back-home{
+    background-color: rgb(29, 31, 32);
+}
+.back-home a{
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 230, 227);
+    padding: 15px;
+    font-size: 18px;
+}
+@media (max-width:767.89px){   /*  small devices*/
+    .cart-container{
+        max-width:540px;
+        margin: auto;
+    }
+    .delete-icon{
+        display: block;
+    width: 70%;
+    padding: 3px 0px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    }
+}
+@media(min-width:768px) and (max-width:991.98px){   /* tablets */
+    .cart-container{
+        max-width:720px;
+        margin: auto;
+    }
+    
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {   /* desktop */
+    .cart-container{
+        max-width: 960px;
+        margin: auto;
+    }
+}

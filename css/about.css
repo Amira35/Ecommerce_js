@@ -1,0 +1,194 @@
+:root{
+    --main-font :  'Source Sans Pro', sans-serif;
+    --main-color-text : rgb(96, 224, 237);
+    --main-padding:30px;
+}
+.header-navbar{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.main-nav__list .nav-item .nav-link{
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+.main-nav__list .nav-item .nav-link.active{
+    color: var(--main-color-text);
+}
+.main-nav__list .nav-item .nav-link:hover{
+    color: var(--main-color-text);
+}
+.hvr-underline-from-center:before{
+    content: '';
+    background: var(--main-color-text);
+    height: 2px;
+}
+.hvr-underline-from-center:hover::before{
+    left: 20px;
+    right: 20px;
+}
+.navbar-nav .dropdown-menu{
+    position: absolute;
+    font-size: 16px;
+    padding: 0;
+    left: -50px;
+}
+.navbar-nav .dropdown-menu li{
+    padding: 10px 0px;
+}
+.cart-icon:hover{
+    color: var(--main-color-text);
+}
+.dropdown_menu-6 li{
+    background-color:var(--main-color-text);
+    color: #fff;
+    padding: 15px 10px;
+}
+.dropdown_menu-6 li:hover{
+    background-color: #fff;
+    color: var(--main-color-text);
+}
+.header-content{
+    position: relative;
+    background-image: url(../img1/download.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+}
+.header-content__color{
+    background-color: var(--main-color-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.header-content__text{
+    padding: 59px 0;
+    font-weight: 600;
+    font-family: var(--main-font);
+}
+.header-content__text a{
+    color: #fff;
+}
+.description{
+    padding: var(--main-padding) 0 ;
+}
+.description-hr{
+    display: block;
+    background-color: #736b5e;
+    width: 100%;
+    height: 3px;
+    margin: 25px 0;
+    position: relative;
+}
+.description-hr::after{
+    content: '';
+    position: absolute;
+    background: var(--main-color-text);
+    width: 255;
+    width: 25%;
+    height: 2.5px;
+    left: 0;
+}
+.description p{
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+.description h5{
+    font-weight: 900;
+}
+.description__text1{
+    padding: 5px;
+    overflow: hidden;
+}
+.description__text2{
+    padding: var(--main-padding) 0;
+}
+.description__text2 p {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+.feature{
+    padding: var(--main-padding) 0 ;
+    background-color: rgb(22, 38, 41);
+}
+.panel{
+    background-color: initial;
+    border: none;
+}
+.panel-title{
+    background-color: var(--main-color-text);
+    border-radius: 21px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.dropdown-toggle:empty::after{
+    display: none;
+}
+.panel-body{
+    font-size: 14px;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+.panel-body::after{
+    content: '';
+    top: 0;
+    position: absolute;
+    left: -10px;
+    height: 100%;
+    border-left: 1px solid rgb(44, 47, 49);
+}
+.feature__img{
+    overflow: hidden;
+}
+.feature__img img{
+    position: relative;
+    animation: widthImg 2s ease-in-out infinite alternate;
+}
+.top{
+    background-color: var(--main-color-text);
+}
+
+
+@keyframes widthImg{
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.content-details p:hover{
+    color: var(--main-color-text);
+}
+
+@media (max-width: 767.89px){
+    .about-container , .container{
+        max-width: 540px;
+        margin: auto;
+    }
+    .main-nav__list .nav-item .nav-link{
+        margin: 0px 25px;
+    }
+   
+    .main-nav__list{
+        width: 78%;
+    }
+
+    .header-content__text h3{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+@media(min-width:768px) and (max-width:991.98px){   /* tablets */
+    .about-container , .container{
+        max-width:720px;
+        margin: auto;
+    }
+    .main-nav__list .nav-item .nav-link{
+        margin: 0px 25px;
+    }
+
+
+}

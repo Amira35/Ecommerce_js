@@ -1,0 +1,15 @@
+.favourite{
+    padding: 11pc 0;
+}
+.favourite-container{
+    max-width: 1140px;
+    margin: auto;
+}
+.icon-mark{
+    position: absolute;
+    background: black;
+    width: 29px;
+    height: 23px;
+    right: 0;
+    cursor: pointer; 
+}
